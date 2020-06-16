@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cont
+{
+position:absolute;
+width:20%;
+right:30px;
+background-color: cornsilk;
+height:10%;
+}
+.child
+{padding:10px;
+    float:left;
+   position:relative;
+   top:20%;
+   
+    width:20px;
+    height:20px;
+    margin-left:23px;
+}
+
+#yellow
+{
+background-color: yellow;
+
+}
+#red
+{
+background-color: red;
+
+}
+#orange
+{
+background-color: orange;
+
+}
+#pink
+{
+background-color: pink;
+
+}
+p{
+    text-indent: -9999px;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="cont">
+<div class="child" id="yellow" onclick="colorchange('yellow')"><p>Yellow</p></div>
+<div class="child" id="red" onclick="colorchange('red')"><p>Red</p></div>
+<div class="child" id ="orange" onclick="colorchange('orange')"><p> Orange</p></div>
+<div class="child" id ="pink"onclick="colorchange('pink')"><p>Pink</p></div>
+
+
+</div>
+
+<script>
+function colorchange(id)
+{
+    document.body.style.backgroundColor=document.getElementById(id).innerText;
+   
+
+}
+</script>
+
+
+</body>
+</html>
